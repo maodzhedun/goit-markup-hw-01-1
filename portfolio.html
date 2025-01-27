@@ -4,12 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Портфоліо</title>
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <!-- Normalize -->
+    <link
+      rel="stylesheet"
+      href="node_modules/modern-normalize/modern-normalize.css"
+    />
+    <!-- Custom styles  -->
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
@@ -48,8 +55,9 @@
     </header>
     <main>
       <!-- Section filter buttons -->
-      <section class="section filter-section">
+      <section class="section filter-card-section">
         <div class="container">
+          <h2 hidden>filter-card</h2>
           <ul class="list filter-list">
             <li>
               <button class="btn filter-btn">All</button>
@@ -67,82 +75,111 @@
               <button class="btn filter-btn">Marketing</button>
             </li>
           </ul>
-        </div>
-      </section>
-      <!-- Section cards -->
-      <section class="section card-section">
-        <div class="container">
+          <!-- Section cards -->
+
           <ul class="list card-list">
-            <li>
-              <img src="./images/cards/img-1.jpg" alt="Banking" width: 360px;
-              height: 300px;/>
+            <li class="card-item">
+              <img src="./images/cards/img-1.jpg" alt="Banking" width="360"
+              height="300"/>
               <div class="card-script">
-                <h3 class="subtitle">Banking App Interface Concept</h3>
-                <p class="card-subtitle">App</p>
+                <h3 class="subtitle card-subtitle">
+                  Banking App Interface Concept
+                </h3>
+                <p class="text-subtitle">App</p>
               </div>
             </li>
-            <li>
-              <img src="./images/cards/img-2.jpg" alt="Cashless" width: 360px;
-              height: 300px;/>
+            <li class="card-item">
+              <img src="./images/cards/img-2.jpg" alt="Cashless" width="360"
+              height="300"/>
               <div class="card-script">
-                <h3 class="subtitle">Cashless Payment</h3>
-                <p class="card-subtitle">Marketing</p>
+                <h3 class="subtitle card-subtitle">Cashless Payment</h3>
+                <p class="text-subtitle">Marketing</p>
               </div>
             </li>
-            <li>
-              <img src="./images/cards/img-3.jpg" alt="Meditation" width: 360px;
-              height: 300px;/>
+            <li class="card-item">
+              <img
+                src="./images/cards/img-3.jpg"
+                alt="Meditation"
+                width="360"
+                height="300"
+              />
               <div class="card-script">
-                <h3 class="subtitle">Meditation App</h3>
-                <p class="card-subtitle">App</p>
+                <h3 class="subtitle card-subtitle">Meditation App</h3>
+                <p class="text-subtitle">App</p>
               </div>
             </li>
-            <li>
-              <img src="./images/cards/img-4.jpg" alt="Taxi" width: 360px;
-              height: 300px;/>
+            <li class="card-item">
+              <img
+                src="./images/cards/img-4.jpg"
+                alt="Taxi"
+                width="360"
+                height="300"
+              />
               <div class="card-script">
-                <h3 class="subtitle">Taxi Service</h3>
-                <p class="card-subtitle">Marketing</p>
+                <h3 class="subtitle card-subtitle">Taxi Service</h3>
+                <p class="text-subtitle">Marketing</p>
               </div>
             </li>
-            <li>
-              <img src="./images/cards/img-5.jpg" alt="Screen Illustrations"
-              width: 360px; height: 300px;/>
+            <li class="card-item">
+              <img
+                src="./images/cards/img-5.jpg"
+                alt="Screen Illustrations"
+                width="360"
+                height="300"
+              />
               <div class="card-script">
-                <h3 class="subtitle">Screen Illustrations</h3>
-                <p class="card-subtitle">Design</p>
+                <h3 class="subtitle card-subtitle">Screen Illustrations</h3>
+                <p class="text-subtitle">Design</p>
               </div>
             </li>
-            <li>
-              <img src="./images/cards/img-6.jpg" alt="Online Courses" width:
-              360px; height: 300px;/>
+            <li class="card-item">
+              <img
+                src="./images/cards/img-6.jpg"
+                alt="Online Courses"
+                width="360"
+                height="300"
+              />
               <div class="card-script">
-                <h3 class="subtitle">Online Courses</h3>
-                <p class="card-subtitle">Marketing</p>
+                <h3 class="subtitle card-subtitle">Online Courses</h3>
+                <p class="text-subtitle">Marketing</p>
               </div>
             </li>
-            <li>
-              <img src="./images/cards/img-7.jpg" alt="Instagram Stories" width:
-              360px; height: 300px;/>
+            <li class="card-item">
+              <img
+                src="./images/cards/img-7.jpg"
+                alt="Instagram Stories"
+                width="360"
+                height="300"
+              />
               <div class="card-script">
-                <h3 class="subtitle">Instagram Stories Concept</h3>
-                <p class="card-subtitle">Design</p>
+                <h3 class="subtitle card-subtitle">
+                  Instagram Stories Concept
+                </h3>
+                <p class="text-subtitle">Design</p>
               </div>
             </li>
-            <li>
-              <img src="./images/cards/img-8.jpg" alt="Organic Food" width:
-              360px; height: 300px;/>
+            <li class="card-item">
+              <img
+                src="./images/cards/img-8.jpg"
+                alt="Organic Food"
+                width="360"
+                height="300"
+              />
               <div class="card-script">
-                <h3 class="subtitle">Organic Food</h3>
-                <p class="card-subtitle">Web Site</p>
+                <h3 class="subtitle card-subtitle">Organic Food</h3>
+                <p class="text-subtitle">Web Site</p>
               </div>
             </li>
-            <li>
-              <img src="./images/cards/img-9.jpg" alt="Fresh Coffee" width:
-              360px; height: 300px;/>
+            <li class="card-item">
+              <img
+                src="./images/cards/img-9.jpg"
+                alt="Fresh Coffee"
+                width="360"
+                height="300"
+              />
               <div class="card-script">
-                <h3 class="subtitle">Fresh Coffee</h3>
-                <p class="card-subtitle">Web Site</p>
+                <h3 class="subtitle card-subtitle">Fresh Coffee</h3>
+                <p class="text-subtitle">Web Site</p>
               </div>
             </li>
           </ul>

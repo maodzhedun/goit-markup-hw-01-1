@@ -50,8 +50,8 @@ p {
   margin-right: auto;
   /* padding: 0 15px; */
 
-  outline: 2px solid red;
-  outline-offset: -2px;
+  /* outline: 2px solid red;
+  outline-offset: -2px; */
 }
 
 /* .button{
@@ -195,11 +195,8 @@ img {
 
 /* style Hero */
 .hero-section {
-  padding-top: 188px;
-  padding-bottom: 188px;
+  padding: 188px 0;
 
-  /* padding-left: 472px;
-  padding-right: 472px; */
   background: var(--navy-blue);
 }
 
@@ -242,8 +239,7 @@ img {
 /* Style About */
 
 .about-container {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding: 120px 0;
 }
 
 .about-list {
@@ -251,8 +247,15 @@ img {
   gap: 24px;
 }
 
+/* Для першого елементу списку в класі заданий стиль width: calc((100% - 72px) / 4);
+для визначення ширини пункту списку (від загальної ширини екрану віднімаємо суму відступів
+між пунктами і ділимо це на кількість пунктів списку) (можна також використовувати
+width: calc((100% - 3 * 24px) / 4) або flex-basis: calc((100% - 3 * 24px) / 4)
+або flex-basis: calc((100% - 72px) / 4)) */
+
 .about-item {
-  width: 264px;
+  flex-basis: calc((100% - 3 * 24px) / 4);
+  /* width: 264px; */
 }
 
 .about-subtitle {
@@ -275,11 +278,21 @@ img {
   gap: 24px;
 }
 
+/* Для першого елементу списку в класі заданий стиль width: calc((100% - 48px) / 3);
+для визначення ширини пункту списку (від загальної ширини екрану віднімаємо суму відступів
+між пунктами і ділимо це на кількість пунктів списку) (можна використовувати
+width: calc((100% - 3 * 16px) / 3) або flex-basis: calc((100% - 48px) / 3)
+або flex-basis: calc((100% - 3 * 16px) / 3)) */
+
+.doing-item {
+  flex-basis: calc((100% - 3 * 16px) / 3);
+}
+
 /* Style Our Team */
 
 .team-section {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding: 120px 0;
+
   background: var(--cloud);
 }
 
@@ -293,7 +306,15 @@ img {
   gap: 24px;
 }
 
+/* Для першого елементу списку в класі заданий стиль width: calc((100% - 72px) / 4);
+для визначення ширини пункту списку (від загальної ширини екрану віднімаємо суму
+відступів між пунктами і ділимо це на кількість пунктів списку) (можна використовувати
+width: calc((100% - 3 * 24px) / 4) або flex-basis: calc((100% - 3 * 24px) / 4)
+або flex-basis: calc((100% - 72px) / 4)) */
+
 .team-item {
+  flex-basis: calc((100% - 3 * 24px) / 4);
+
   border-radius: 0 0 4px 4px;
   padding: 0px 0px 32px 0px;
   width: 264px;
@@ -327,6 +348,7 @@ img {
 }
 
 .logo-footer {
+  display: inline-block;
   margin-bottom: 16px;
 }
 
@@ -337,15 +359,15 @@ img {
 
 /* Style filter  */
 
-.filter-section {
-  padding: 96px 0 72px;
+.filter-card-section {
+  padding: 96px 0 120px;
 }
 
 .filter-list {
   display: flex;
   justify-content: center;
   gap: 24px;
-  /* margin-bottom: 72px; */
+  margin-bottom: 72px;
 }
 
 .filter-btn {
@@ -374,9 +396,6 @@ img {
 
 /* Style cards */
 
-.card-section {
-  padding-bottom: 120px;
-}
 
 .card-list {
   display: flex;
@@ -384,8 +403,22 @@ img {
   gap: 48px 24px;
 }
 
+/* Для першого пункту списку в класі заданий стиль width: calc((100% - 48px) / 3);
+для визначення ширини для елемента списку (від загальної ширини екрану віднімаємо
+суму відступів між пунктами і ділимо це на кількість пунктів списку в одному рядку) */
+
+.card-item{
+  width:calc((100% - 48px) / 3);
+  /* border: 1px solid var(--cornflower);
+  border-top: none; */
+}
+
 .card-script {
-  padding: 32px 0 32px 16px;
+  padding: 32px 16px;
+}
+
+.card-subtitle{
+  margin-bottom: 8px;
 }
 
 .card-subtitle {
