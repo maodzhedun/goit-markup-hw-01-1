@@ -195,9 +195,19 @@ img {
 
 /* style Hero */
 .hero-section {
+  max-width: 1440px;
+  margin: 0 auto;
   padding: 188px 0;
 
-  background: var(--navy-blue);
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/hero/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: var(--grey);
 }
 
 .hero-title {
@@ -256,6 +266,16 @@ width: calc((100% - 3 * 24px) / 4) або flex-basis: calc((100% - 3 * 24px) / 4
 .about-item {
   flex-basis: calc((100% - 3 * 24px) / 4);
   /* width: 264px; */
+}
+
+.about-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 112px;
+  margin-bottom: 8px;
+  border-radius: 4px;
+  background-color: var(--cloud);
 }
 
 .about-subtitle {
@@ -326,7 +346,7 @@ width: calc((100% - 3 * 24px) / 4) або flex-basis: calc((100% - 3 * 24px) / 4
 }
 
 .team-script {
-  padding: 32px 16px;
+  padding: 32px 0;
   text-align: center;
 }
 
@@ -335,9 +355,80 @@ width: calc((100% - 3 * 24px) / 4) або flex-basis: calc((100% - 3 * 24px) / 4
 }
 
 .team-text {
+  margin-bottom: 8px;
   font-family: inherit;
 
   color: var(--slate);
+}
+
+.team-social {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.social-item {
+  width: 40px;
+  height: 40px;
+}
+
+.link-social {
+  width: 100%;
+  height: 100%;
+  background-color: var(--iris);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.link-social:hover,
+.link-social:focus {
+  background-color: var(--green);
+}
+
+/* Style  Customers */
+
+.customer-section {
+  padding: 120px 0;
+}
+
+.customer-title {
+  margin-bottom: 72px;
+  text-align: center;
+}
+
+.customer-list {
+  display: flex;
+  gap: 24px;
+}
+
+.customer-item {
+  width: calc((100% - 120px) / 6);
+  height: 88px;
+}
+
+.customer-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 100%;
+
+  border: 1px solid var(--light-slate);
+  border-radius: 4px;
+  color: var(--light-slate);
+}
+
+.customer-link:hover,
+.customer-link:focus {
+  border-color: var(--ocean);
+  color: var(--ocean);
+}
+
+.customer-icon {
+  fill: currentColor;
 }
 
 /* Style footer */
@@ -345,6 +436,12 @@ width: calc((100% - 3 * 24px) / 4) або flex-basis: calc((100% - 3 * 24px) / 4
 .footer {
   padding: 100px 0;
   background-color: var(--navy-blue);
+}
+
+.footer-container {
+  display: flex;
+  align-items: baseline;
+  gap: 120px;
 }
 
 .logo-footer {
@@ -355,6 +452,23 @@ width: calc((100% - 3 * 24px) / 4) або flex-basis: calc((100% - 3 * 24px) / 4
 .footer-text {
   width: 264px;
   color: var(--cloud);
+}
+
+.footer-undertitle {
+  margin-bottom: 16px;
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+
+  color: var(--white);
+}
+
+.footer-social {
+  display: flex;
+  gap: 16px;
 }
 
 /* Style filter  */
@@ -396,7 +510,6 @@ width: calc((100% - 3 * 24px) / 4) або flex-basis: calc((100% - 3 * 24px) / 4
 
 /* Style cards */
 
-
 .card-list {
   display: flex;
   flex-wrap: wrap;
@@ -407,8 +520,8 @@ width: calc((100% - 3 * 24px) / 4) або flex-basis: calc((100% - 3 * 24px) / 4
 для визначення ширини для елемента списку (від загальної ширини екрану віднімаємо
 суму відступів між пунктами і ділимо це на кількість пунктів списку в одному рядку) */
 
-.card-item{
-  width:calc((100% - 48px) / 3);
+.card-item {
+  width: calc((100% - 48px) / 3);
   /* border: 1px solid var(--cornflower);
   border-top: none; */
 }
@@ -417,7 +530,7 @@ width: calc((100% - 3 * 24px) / 4) або flex-basis: calc((100% - 3 * 24px) / 4
   padding: 32px 16px;
 }
 
-.card-subtitle{
+.card-subtitle {
   margin-bottom: 8px;
 }
 
