@@ -14,7 +14,7 @@
     <!-- Normalize -->
     <link
       rel="stylesheet"
-      href="node_modules/modern-normalize/modern-normalize.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
     />
     <!-- Custom styles  -->
     <link rel="stylesheet" href="./css/style.css" />
@@ -58,7 +58,9 @@
       <section class="hero-section section">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button class="btn hero-btn" type="button">Order Service</button>
+          <button class="btn hero-btn" type="button" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
       <!-- Section About -->
@@ -458,21 +460,30 @@
           <p class="footer-undertitle">Social media</p>
           <ul class="list footer-social">
             <li class="social-item">
-              <a class="link link-social link-social-footer" href="https://www.instagram.com/">
+              <a
+                class="link link-social link-social-footer"
+                href="https://www.instagram.com/"
+              >
                 <svg class="social-icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-instagram-1"></use>
                 </svg>
               </a>
             </li>
             <li class="social-item">
-              <a class="link link-social link-social-footer" href="https://x.com/">
+              <a
+                class="link link-social link-social-footer"
+                href="https://x.com/"
+              >
                 <svg class="social-icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-twitter-1"></use>
                 </svg>
               </a>
             </li>
             <li class="social-item">
-              <a class="link link-social link-social-footer" href="https://www.facebook.com/">
+              <a
+                class="link link-social link-social-footer"
+                href="https://www.facebook.com/"
+              >
                 <svg class="social-icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-facebook-1"></use>
                 </svg>
@@ -492,5 +503,18 @@
         </div>
       </div>
     </footer>
+
+    <!-- Modal windows -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-btn" type="button" data-modal-close>
+          <svg class="modal-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
