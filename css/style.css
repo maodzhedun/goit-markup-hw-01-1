@@ -477,7 +477,7 @@ width: calc((100% - 3 * 24px) / 4) або flex-basis: calc((100% - 3 * 24px) / 4
 .footer-container {
   display: flex;
   align-items: baseline;
-  gap: 120px;
+  /* gap: 120px; */
 }
 
 .logo-footer {
@@ -502,6 +502,10 @@ width: calc((100% - 3 * 24px) / 4) або flex-basis: calc((100% - 3 * 24px) / 4
   color: var(--white);
 }
 
+.text-wrap {
+  margin-right: 120px;
+}
+
 .footer-social {
   display: flex;
   gap: 16px;
@@ -515,6 +519,74 @@ width: calc((100% - 3 * 24px) / 4) або flex-basis: calc((100% - 3 * 24px) / 4
 .link-social-footer:focus {
   background-color: var(--green);
 }
+
+.cmedia-wrap {
+  margin-right: 80px;
+}
+
+.form-subscribe {
+  width: 453px;
+  height: 80px;
+}
+
+.form-subscribe-email {
+  display: flex;
+  gap: 24px;
+}
+
+.form-subscribe-undertext {
+  display: inline-block;
+  margin-bottom: 18px;
+
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--white);
+}
+
+.form-subscribe-input {
+  width: 264px;
+  height: 40px;
+
+  padding: 8px 16px;
+
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: var(--white);
+
+  border: 1px solid var(--white);
+  border-radius: 4px;
+  background-color: transparent;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+}
+
+.form-subscribe-input:focus {
+  border: var(--ocean);
+}
+
+.form-subscribe-btn {
+  display: flex;
+  gap: 24px;
+
+  width: 165px;
+  height: 40px;
+  padding: 8px 24px;
+
+  border-radius: 4px;
+  background: var(--iris);
+}
+
+/* font-family: var(--font-family);
+font-weight: 500;
+font-size: 16px;
+line-height: 150%;
+letter-spacing: 0.02em;
+color: var(--white); */
 
 /* Style filter  */
 
