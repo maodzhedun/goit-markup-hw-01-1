@@ -267,6 +267,7 @@ img {
   min-width: 169px;
   min-height: 56px;
 
+  border: none;
   border-radius: 4px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background-color: var(--iris);
@@ -369,10 +370,6 @@ width: calc((100% - 3 * 24px) / 4) або flex-basis: calc((100% - 3 * 24px) / 4
   flex-basis: calc((100% - 3 * 24px) / 4);
 
   border-radius: 0 0 4px 4px;
-  padding: 0px 0px 32px 0px;
-  width: 264px;
-  height: 380px;
-
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   background: var(--white);
@@ -563,30 +560,37 @@ width: calc((100% - 3 * 24px) / 4) або flex-basis: calc((100% - 3 * 24px) / 4
   border-radius: 4px;
   background-color: transparent;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+
+   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-subscribe-input:focus {
-  border: var(--ocean);
+  border-color: var(--iris);
+  border-radius: 4px;
+}
+.form-subscribe-input::placeholder{
+  color: var(--white);
 }
 
 .form-subscribe-btn {
   display: flex;
-  gap: 24px;
+  gap: 16px;
 
   width: 165px;
   height: 40px;
   padding: 8px 24px;
 
+  border: none;
   border-radius: 4px;
   background: var(--iris);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);;
 }
 
-/* font-family: var(--font-family);
-font-weight: 500;
-font-size: 16px;
-line-height: 150%;
-letter-spacing: 0.02em;
-color: var(--white); */
+.form-subscribe-btn:hover,
+.form-subscribe-btn:focus {
+  background-color: var(--ocean);
+}
 
 /* Style filter  */
 
@@ -617,7 +621,7 @@ color: var(--white); */
   background-color: var(--cloud);
 
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    olor 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -779,4 +783,43 @@ color: var(--white); */
   color: var(--white);
   background-color: var(--ocean);
   fill: var(--white);
+}
+
+.modal-type{
+  margin-top: 48px;
+
+  font-family: inherit;
+  font-weight: 500;
+  text-align: center;
+
+  /* font: 500 16px / 1.5 var(--font-family);
+letter-spacing: 0.02em;
+text-align: center;
+color: var(--navy-blue); */
+}
+
+
+.form-action{
+  margin-top: 16px;
+  /* width: 360px;
+  height: 336px; */
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+
+.form-action-label{
+display: flex;
+flex-direction: column;
+position: relative;
+}
+
+.form-action-input{
+}
+
+.form-action-icon{
+position: absolute;
+top: 0;
+left: 0;
 }

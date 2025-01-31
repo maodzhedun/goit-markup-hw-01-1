@@ -503,20 +503,23 @@
         </div>
         <div class="form-subscribe">
           <p class="form-subscribe-undertext">Subscribe</p>
-          <label class="form-subscribe-email">
-            <input
-              type="email"
-              class="form-subscribe-input"
-              name="mail"
-              placeholder="E-mail"
-            />
-            <button class="btn form-subscribe-btn" type="submit">
-              Subscribe
-              <svg class="form-subscribe-icon" width="24" height="20">
-                <use href="./images/icons.svg#icon-send"></use>
-              </svg>
-            </button>
-          </label>
+          <form class="subscribe-forms">
+            <label class="form-subscribe-email">
+              <input
+                type="email"
+                class="form-subscribe-input"
+                name="email"
+                placeholder="E-mail"
+                aria-label="email"
+              />
+              <button class="btn form-subscribe-btn" type="submit">
+                Subscribe
+                <svg class="form-subscribe-icon" width="24" height="20">
+                  <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+              </button>
+            </label>
+          </form>
         </div>
       </div>
     </footer>
@@ -529,6 +532,55 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
+        <p class="modal-type">Leave your contacts and we will call you back</p>
+        <form class="form-action">
+          <label class="form-action-label">
+            Name
+            <input
+              class="form-action-input"
+              type="text"
+              name="name"
+              aria-label="name"
+            />
+            <svg class="form-action-icon" width="18" height="18">
+              <use href=""></use>
+            </svg>
+          </label>
+          <label class="form-action-label">
+            Phone
+            <input
+              class="form-action-input"
+              type="text"
+              name="Phone"
+              aria-level="Phone"
+            />
+            <svg class="form-action-icon" width="18" height="24">
+              <use href=""></use>
+            </svg>
+          </label>
+          <label class="form-action-label">
+            Email
+            <input
+              class="form-action-input"
+              type="text"
+              name="email"
+              aria-label="Email"
+            />
+            <svg class="form-action-icon" width="18" height="24">
+              <use href=""></use>
+            </svg>
+          </label>
+          <label class="form-action-label">
+            Comment
+            <textarea name="Comment" placeholder="Text input"></textarea>
+          </label>
+          <label>
+            <input type="checkbox" name="" />
+            I accept the terms and conditions of the
+            <a class="link" href="">Privacy Policy</a>
+          </label>
+          <button type="submit">Send</button>
+        </form>
       </div>
     </div>
 
