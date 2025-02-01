@@ -535,7 +535,7 @@
         <p class="modal-type">Leave your contacts and we will call you back</p>
         <form class="form-action">
           <label class="form-action-label">
-            Name
+            <span class="form-action-subtitle">Name</span>
             <input
               class="form-action-input"
               type="text"
@@ -543,43 +543,47 @@
               aria-label="name"
             />
             <svg class="form-action-icon" width="18" height="18">
-              <use href=""></use>
+              <use href="./images/icons.svg#icon-Vector-01"></use>
             </svg>
           </label>
           <label class="form-action-label">
-            Phone
+            <span class="form-action-subtitle">Phone</span>
             <input
               class="form-action-input"
-              type="text"
+              type="tel"
               name="Phone"
               aria-level="Phone"
             />
             <svg class="form-action-icon" width="18" height="24">
-              <use href=""></use>
+              <use href="./images/icons.svg#icon-Vector-02"></use>
             </svg>
           </label>
           <label class="form-action-label">
-            Email
+            <span class="form-action-subtitle">Email</span>
             <input
               class="form-action-input"
-              type="text"
+              type="email"
               name="email"
               aria-label="Email"
             />
             <svg class="form-action-icon" width="18" height="24">
-              <use href=""></use>
+              <use href="./images/icons.svg#icon-Vector-03"></use>
             </svg>
           </label>
           <label class="form-action-label">
-            Comment
-            <textarea name="Comment" placeholder="Text input"></textarea>
+            <span class="form-action-subtitle">Comment</span>
+            <textarea
+              class="form-action-textarea"
+              name="Comment"
+              placeholder="Text input"
+            ></textarea>
           </label>
-          <label>
+          <label class="checkbox-label">
             <input type="checkbox" name="" />
-            I accept the terms and conditions of the
-            <a class="link" href="">Privacy Policy</a>
+            <span class="checkbox-script">I accept the terms and conditions of the</span>
+            <a class="link checkbox-script-link" href="">Privacy Policy</a>
           </label>
-          <button type="submit">Send</button>
+          <button class="btn form-action-btn" type="submit">Send</button>
         </form>
       </div>
     </div>
