@@ -578,9 +578,29 @@
               placeholder="Text input"
             ></textarea>
           </label>
-          <label class="checkbox-label">
-            <input type="checkbox" name="" />
-            <span class="checkbox-script">I accept the terms and conditions of the</span>
+          <!-- <svg class="" width="16" height="16">
+            <use href="./images/icons.svg#icon-checked"></use>
+          </svg> -->
+          <label class="checkbox-form-agree">
+            <input
+              class="checkbox-form-agree-box"
+              type="checkbox"
+              name="user-agree"
+            />
+            <svg class="checkbox-form-agree-icon" width="16" height="16">
+              <use
+                class="checkbox-form-agree-unchecked"
+                href="./images/icons.svg#icon-unchecked"
+              ></use>
+              <use
+                class="checkbox-form-agree-checked"
+                href="./images/icons.svg#icon-checked"
+              ></use>
+            </svg>
+
+            <span class="checkbox-script"
+              >I accept the terms and conditions of the</span
+            >
             <a class="link checkbox-script-link" href="">Privacy Policy</a>
           </label>
           <button class="btn form-action-btn" type="submit">Send</button>
