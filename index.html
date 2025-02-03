@@ -17,7 +17,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
     />
     <!-- Custom styles  -->
-    <link rel="stylesheet" href="./css/style.css" />
+    <!-- <link rel="stylesheet" href="./css/style.css" /> -->
+    <link rel="stylesheet" href="./css/mobile.css" />
   </head>
   <body>
     <!-- Section Header -->
@@ -51,22 +52,31 @@
             </li>
           </ul>
         </address>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="icon-mobile" width="32" height="22">
+            <use href="./images/icons.svg#icon-menu-hamburger"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
       <!-- Section Hero -->
-      <section class="hero-section section">
+      <!-- <section class="hero-section section">
         <div class="container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <button class="btn hero-btn" type="button" data-modal-open>
             Order Service
           </button>
         </div>
-      </section>
+      </section> -->
       <!-- Section About -->
-      <section id="about" class="section about-section">
+      <!-- <section id="about" class="section about-section">
         <div class="container about-container">
-          <h2 class="title" hidden>About company</h2>
+          <h2 class="title visually-hidden">About company</h2>
           <ul class="list about-list">
             <li class="about-item">
               <div class="about-wrap">
@@ -118,9 +128,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- Section  What are we doing-->
-      <section class="section">
+      <!-- <section class="section">
         <div class="container doing-container">
           <h2 class="title doing-title">What are we doing</h2>
           <ul class="list doing-list">
@@ -150,9 +160,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- Section Our Team -->
-      <section class="team-section section">
+      <!-- <section class="team-section section">
         <div class="container">
           <h2 class="title team-title">Our Team</h2>
           <ul class="list team-list">
@@ -362,9 +372,9 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
       <!-- Section Customers -->
-      <section class="section customer-section">
+      <!-- <section class="section customer-section">
         <div class="container">
           <h2 class="title customer-title">Customers</h2>
           <ul class="list customer-list">
@@ -442,10 +452,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
     <!-- Section Footer -->
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container footer-container">
         <div class="text-wrap">
           <a class="link logo logo-footer" href="./index.html"
@@ -522,10 +532,10 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
 
     <!-- Modal windows -->
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-btn" type="button" data-modal-close>
           <svg class="modal-icon" width="8" height="8">
@@ -578,9 +588,6 @@
               placeholder="Text input"
             ></textarea>
           </label>
-          <!-- <svg class="" width="16" height="16">
-            <use href="./images/icons.svg#icon-checked"></use>
-          </svg> -->
           <label class="checkbox-form-agree">
             <input
               class="checkbox-form-agree-box"
@@ -606,8 +613,11 @@
           <button class="btn form-action-btn" type="submit">Send</button>
         </form>
       </div>
-    </div>
+    </div> -->
+
+    <!-- Mobile menu -->
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
