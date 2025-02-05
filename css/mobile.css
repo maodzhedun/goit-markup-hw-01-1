@@ -95,7 +95,9 @@ img {
 }
 
 .container {
-  width: 100%;
+  min-width: 320px;
+  max-width: 428px;
+  /* width: 100%; */
   margin-left: auto;
   margin-right: auto;
   padding-left: 16px;
@@ -105,9 +107,15 @@ img {
   outline-offset: -2px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
   }
 }
 
@@ -361,9 +369,8 @@ img {
 
 .about-list {
   display: flex;
-  gap: 72px;
   flex-direction: column;
-  /* gap: 24px; */
+  gap: 72px;
 }
 
 /* Для першого елементу списку в класі заданий стиль width: calc((100% - 72px) / 4);
@@ -373,8 +380,6 @@ width: calc((100% - 3 * 24px) / 4) або flex-basis: calc((100% - 3 * 24px) / 4
 або flex-basis: calc((100% - 72px) / 4)) */
 
 .about-item {
-  flex-basis: calc((100% - 3 * 24px) / 4);
-  /* width: 264px; */
 }
 
 .about-wrap {
@@ -397,6 +402,12 @@ width: calc((100% - 3 * 24px) / 4) або flex-basis: calc((100% - 3 * 24px) / 4
   margin-bottom: 8px;
 }
 
+@media only screen and (max-width: 767px) {
+  .about-subtitle {
+    text-align: center;
+  }
+}
+
 @media only screen and (max-width: 1157px) {
   .about-subtitle {
     font: 700 36px / 1.11111 var(--font-family);
@@ -410,4 +421,90 @@ width: calc((100% - 3 * 24px) / 4) або flex-basis: calc((100% - 3 * 24px) / 4
     letter-spacing: 0.02em;
     color: var(--slate);
   }
+}
+
+/* Style Our Team */
+
+.team-container {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.team-section {
+  background: var(--cloud);
+}
+
+.team-title {
+  margin-bottom: 72px;
+  text-align: center;
+}
+
+.team-list {
+  display: flex;
+  gap: 72px;
+}
+
+@media only screen and (max-width: 767px) {
+  .team-list {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Для першого елементу списку в класі заданий стиль width: calc((100% - 72px) / 4);
+для визначення ширини пункту списку (від загальної ширини екрану віднімаємо суму
+відступів між пунктами і ділимо це на кількість пунктів списку) (можна використовувати
+width: calc((100% - 3 * 24px) / 4) або flex-basis: calc((100% - 3 * 24px) / 4)
+або flex-basis: calc((100% - 72px) / 4)) */
+
+.team-item {
+  /* flex-basis: calc((100% - 3 * 24px) / 4); */
+
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  background: var(--white);
+}
+
+.team-script {
+  padding: 32px 0;
+  text-align: center;
+}
+
+.team-subtitle {
+  margin-bottom: 8px;
+}
+
+.team-text {
+  margin-bottom: 8px;
+  font-family: inherit;
+
+  color: var(--slate);
+}
+
+.team-social {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.social-item {
+  width: 40px;
+  height: 40px;
+}
+
+.link-social {
+  width: 100%;
+  height: 100%;
+  background-color: var(--iris);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.link-social:hover,
+.link-social:focus {
+  background-color: var(--ocean);
 }

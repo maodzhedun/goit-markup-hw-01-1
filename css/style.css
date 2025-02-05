@@ -296,8 +296,12 @@ img {
 /* Style About */
 
 .about-container {
-  padding: 120px 0;
+  padding: 96px 0;
 }
+
+/* .about-container {
+  padding: 120px 0;
+} */
 
 .about-list {
   display: flex;

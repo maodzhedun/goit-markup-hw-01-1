@@ -1,4 +1,11 @@
 @media only screen and (min-width: 1158px) {
+  .section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
   .header-container {
     min-width: 1158px;
   }
@@ -51,3 +58,67 @@
     }
   }
 }
+
+/* About Section */
+
+@media only screen and (min-width: 1158px) {
+  .about-list {
+    flex-direction: row;
+    gap: 24px;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .about-item {
+    flex-basis: calc((100% - 3 * 24px) / 4);
+    /* width: 264px; */
+  }
+}
+
+/* Style What are we doing */
+
+@media only screen and (max-width: 1157px) {
+  .section-doing {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .doing-container {
+    padding-bottom: 120px;
+  }
+
+  .doing-title {
+    margin-bottom: 72px;
+    text-align: center;
+  }
+
+  .doing-list {
+    display: flex;
+    gap: 24px;
+  }
+
+  /* Для першого елементу списку в класі заданий стиль width: calc((100% - 48px) / 3);
+для визначення ширини пункту списку (від загальної ширини екрану віднімаємо суму відступів
+між пунктами і ділимо це на кількість пунктів списку) (можна використовувати
+width: calc((100% - 3 * 16px) / 3) або flex-basis: calc((100% - 48px) / 3)
+або flex-basis: calc((100% - 3 * 16px) / 3)) */
+
+  .doing-item {
+    flex-basis: calc((100% - 3 * 16px) / 3);
+  }
+}
+
+/* Style Our Team */
+
+@media only screen and (min-width: 1158px) {
+  .team-section {
+    padding: 120px 0;
+  }
+
+  .team-item{
+    flex-basis: calc((100% - 3 * 24px) / 4);
+  }
+}
+
+

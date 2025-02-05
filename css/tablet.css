@@ -33,3 +33,33 @@
     }
   }
 }
+
+@media only screen and (min-width: 768px) {
+  .about-list {
+    flex-wrap: wrap;
+    flex-direction: row;
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .about-item {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+}
+
+/* Section Team */
+
+@media only screen and (min-width: 768px) {
+  .team-list {
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 24px;
+    row-gap: 64px;
+  }
+
+  .team-item {
+    flex-basis: calc((100% - 24px) / 2);
+  }
+}
