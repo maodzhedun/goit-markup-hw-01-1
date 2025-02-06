@@ -60,6 +60,18 @@
   }
 
   .team-item {
-    flex-basis: calc((100% - 24px) / 2);
+    /* flex-basis: calc((100% - 24px) / 2); */
   }
+}
+
+
+
+/* Style  Customers */
+
+@media only screen and (min-width: 768px) {
+ .customer-item {
+  flex-basis: calc((100% - 3 * 16px) / 3);
+  height: 88px;
+}
+
 }
