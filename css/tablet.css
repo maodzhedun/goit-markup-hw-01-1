@@ -4,6 +4,8 @@
   }
 }
 
+/* Section Hero */
+
 @media only screen and (min-width: 428px) and (max-width: 767px) {
   .hero-section {
     /* max-width: 428px; */
@@ -35,6 +37,13 @@
 }
 
 @media only screen and (min-width: 768px) {
+  .hero-title {
+    max-width: 496px;
+    font-size: 56px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
   .about-list {
     flex-wrap: wrap;
     flex-direction: row;
@@ -51,7 +60,7 @@
 
 /* Section Team */
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (max-width: 1157px) {
   .team-list {
     flex-wrap: wrap;
     justify-content: center;
@@ -64,14 +73,85 @@
   }
 }
 
-
-
 /* Style  Customers */
 
-@media only screen and (min-width: 768px) {
- .customer-item {
-  flex-basis: calc((100% - 3 * 16px) / 3);
-  height: 88px;
+@media only screen and (min-width: 768px) and (max-width: 1157px) {
+  .customer-container {
+    max-width: 552px;
+    padding: 0;
+  }
+
+  .customer-list {
+    flex-wrap: wrap;
+    row-gap: 72px;
+    column-gap: 24px;
+  }
+
+  .customer-item {
+    flex-basis: calc((100% - 2 * 24px) / 3);
+    height: 88px;
+  }
 }
 
+/* Style footer */
+
+@media only screen and (min-width: 768px) and (max-width: 1157px) {
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
+    max-width: 552px;
+    padding: 0;
+  }
+
+  .form-subscribe {
+    width: 453px;
+    height: 80px;
+  }
+
+  .form-subscribe-input {
+    width: 264px;
+  }
+
+  .text-wrap {
+  }
+
+  .form-subscribe-email {
+    display: flex;
+    gap: 24px;
+  }
+}
+
+/* Style filter  */
+
+@media only screen and (min-width: 768px) {
+  .filter-card-section {
+    padding-top: 64px;
+    padding-bottom: 96px;
+  }
+
+  .filter-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 64px;
+  }
+
+  .filter-btn {
+    min-width: 116px;
+    min-height: 48px;
+    padding: 12px 24px;
+  }
+
+  .card-list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+
+  .card-item {
+    width: calc((100% - 24px) / 2);
+  }
 }

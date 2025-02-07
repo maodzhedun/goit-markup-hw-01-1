@@ -6,9 +6,9 @@
 }
 
 @media only screen and (min-width: 1158px) {
-  .header-container {
+  /* .header-container {
     min-width: 1158px;
-  }
+  } */
 
   .logo {
     margin-right: 76px;
@@ -56,6 +56,12 @@
         ),
         url(../images/hero/hero_desk@2x.jpg);
     }
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .hero-section {
+    max-width: 1440px;
   }
 }
 
@@ -134,11 +140,69 @@ width: calc((100% - 3 * 16px) / 3) або flex-basis: calc((100% - 48px) / 3)
 
   .customer-list {
     display: flex;
-    gap: 24px;
+    row-gap: 72px;
+    column-gap: 24px;
   }
 
   .customer-item {
-    width: calc((100% - 120px) / 6);
+    flex-basis: calc((100% - 5 * 24px) / 6);
     height: 88px;
-  }Я
+  }
+}
+
+/* Style footer */
+
+@media only screen and (min-width: 1158px) {
+  .footer {
+    padding: 100px 0;
+  }
+
+  .footer-container {
+  display: flex;
+  align-items: baseline;
+  /* gap: 120px; */
+}
+ .form-subscribe {
+    width: 453px;
+    height: 80px;
+  }
+
+
+  .text-wrap {
+    margin-right: 120px;
+  }
+
+  .cmedia-wrap {
+  margin-right: 80px;
+}
+
+.form-subscribe-email{
+    display: flex;
+    gap: 24px;
+  }
+   .form-subscribe-input{
+    width: 264px;
+  }
+
+}
+
+/* Style filter  */
+
+@media only screen and (min-width: 1158px) {
+  .filter-card-section {
+  padding-top: 100px;
+  padding-bottom: 120px;
+}
+
+.filter-list{
+  margin-bottom: 72px;
+}
+
+.card-list{
+  row-gap: 48px;
+}
+
+.card-item{
+  width: calc((100% - 48px) / 3);
+}
 }

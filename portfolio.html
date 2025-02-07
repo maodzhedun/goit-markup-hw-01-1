@@ -18,7 +18,10 @@
     />
     <!-- Custom styles  -->
     <!-- <link rel="stylesheet" href="./css/style.css" /> -->
+    <!-- <link rel="stylesheet" href="./css/mobile.css" /> -->
     <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="stylesheet" href="./css/tablet.css" />
+    <link rel="stylesheet" href="./css/desktop.css" />
   </head>
   <body>
     <!-- Section Header -->
@@ -30,12 +33,10 @@
           >
           <ul class="nav-list list">
             <li class="nav-item">
-              <a class="link nav-link" href="./index.html">Studio</a>
+              <a class="link nav-link active" href="./index.html">Studio</a>
             </li>
             <li class="nav-item">
-              <a class="link nav-link active" href="./portfolio.html"
-                >Portfolio</a
-              >
+              <a class="link nav-link" href="./portfolio.html">Portfolio</a>
             </li>
             <li class="nav-item">
               <a class="link nav-link" href="#">Contacts</a>
@@ -54,11 +55,20 @@
             </li>
           </ul>
         </address>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="icon-mobile" width="32" height="22">
+            <use href="./images/icons.svg#icon-menu-hamburger"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
       <!-- Section filter-card buttons -->
-      <!-- <section class="section filter-card-section">
+      <section class="section filter-card-section">
         <div class="container">
           <h2 class="visually-hidden">filter-card</h2>
           <ul class="list filter-list">
@@ -292,10 +302,10 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
     <!-- Section Footer -->
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container footer-container">
         <div class="text-wrap">
           <a class="link logo logo-footer" href="./index.html"
@@ -372,6 +382,8 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
